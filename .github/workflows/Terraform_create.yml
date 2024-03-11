@@ -12,6 +12,8 @@ on:
       - main
     paths:
       - '**.tf'
+  
+  workflow_dispatch:
 
 jobs:
   terraform:
