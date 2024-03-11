@@ -17,10 +17,6 @@ resource "aws_db_subnet_group" "ApiFoodieFlowVPC" {
   name       = "vpc-sub-${var.projectName}"
   subnet_ids = module.vpc.public_subnets
 
-  public_subnet_tags = {
-    "kubernetes.io/role/elb" = 1
-  }
-
   tags = {
     Name = "FoodieFlowVPC"
   }

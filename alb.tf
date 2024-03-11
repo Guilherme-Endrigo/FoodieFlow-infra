@@ -7,7 +7,7 @@ resource "aws_lb" "FoodieFlowAlb" {
 }
 
 resource "aws_lb_listener" "listener" {
-  load_balancer_arn = aws_lb.alb.arn
+  load_balancer_arn = aws_lb.FoodieFlowAlb.arn
   port              = "80"
   protocol          = "HTTP"
 
