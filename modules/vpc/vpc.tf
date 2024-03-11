@@ -13,7 +13,7 @@ module "vpc" {
   enable_dns_support   = true
 }
 
-resource "aws_db_subnet_group" "FoodieFlowVPC" {
+resource "aws_db_subnet_group" "ApiFoodieFlowVPC" {
   name       = "vpc-sub-${var.projectName}"
   subnet_ids = module.vpc.public_subnets
 
