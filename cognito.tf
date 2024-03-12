@@ -12,9 +12,9 @@ resource "aws_cognito_user_pool" "foodieflow_user_pool" {
 }
 
 resource "aws_cognito_user_pool_client" "client" {
-  name = "my_user_pool_client"
+  name = "user_pool_client_${var.projectName}"
 
-  user_pool_id = aws_cognito_user_pool.pool.id
+  user_pool_id = aws_cognito_user_pool.foodieflow_user_pool.id
 
   generate_secret = true
 }
