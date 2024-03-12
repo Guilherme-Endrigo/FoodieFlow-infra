@@ -12,12 +12,3 @@ module "vpc" {
   enable_dns_hostnames = true
   enable_dns_support   = true
 }
-
-resource "aws_api_subnet_group" "ApiFoodieFlowVPC" {
-  name       = "vpc-sub-${var.projectName}"
-  subnet_ids = module.vpc.public_subnets
-
-  tags = {
-    Name = "FoodieFlowVPC"
-  }
-}
