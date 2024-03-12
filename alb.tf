@@ -2,7 +2,6 @@ resource "aws_lb" "FoodieFlowAlb" {
   name               = "alb-${var.projectName}"
   internal           = false
   load_balancer_type = "application"
-  security_groups    = ["sg-abcde123"]
   subnets            = module.vpc.public_subnets
 }
 
