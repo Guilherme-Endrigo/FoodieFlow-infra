@@ -28,8 +28,8 @@ resource "aws_lambda_function" "tfer--create-002D-auth-002D-challenge" {
 }
 
 resource "aws_lambda_function" "tfer--define-002D-auth-002D-challenge" {
-  s3_bucket = "lambda-foodieflow"
-  s3_key = "define-auth-challenge-c59f32d6-215c-45fc-8613-3dfb836d627b.zip"
+  s3_bucket     = "lambda-foodieflow"
+  s3_key        = "define-auth-challenge-c59f32d6-215c-45fc-8613-3dfb836d627b.zip"
   architectures = ["x86_64"]
 
   ephemeral_storage {
@@ -59,8 +59,8 @@ resource "aws_lambda_function" "tfer--define-002D-auth-002D-challenge" {
 }
 
 resource "aws_lambda_function" "tfer--jwt-002D-validator" {
-  s3_bucket = "lambda-foodieflow"
-  s3_key = "jwt-validator-3b16b3a5-cce1-4a6e-87c0-b833260b8fad.zip"
+  s3_bucket     = "lambda-foodieflow"
+  s3_key        = "jwt-validator-3b16b3a5-cce1-4a6e-87c0-b833260b8fad.zip"
   architectures = ["x86_64"]
 
   ephemeral_storage {
@@ -90,8 +90,8 @@ resource "aws_lambda_function" "tfer--jwt-002D-validator" {
 }
 
 resource "aws_lambda_function" "tfer--pre-002D-signup" {
-  s3_bucket = "lambda-foodieflow"
-  s3_key = "pre-signup-zip-67a5b6c8-4835-4ed3-a289-7137d4a34e1e.zip"
+  s3_bucket     = "lambda-foodieflow"
+  s3_key        = "pre-signup-zip-67a5b6c8-4835-4ed3-a289-7137d4a34e1e.zip"
   architectures = ["x86_64"]
 
   ephemeral_storage {
@@ -121,8 +121,8 @@ resource "aws_lambda_function" "tfer--pre-002D-signup" {
 }
 
 resource "aws_lambda_function" "tfer--pre-002D-signup-002D-new" {
-  s3_bucket = "lambda-foodieflow"
-  s3_key = "pre-signup-new-42ae4e8d-270e-4ccd-bf8c-0bbdf3119675.zip"
+  s3_bucket     = "lambda-foodieflow"
+  s3_key        = "pre-signup-new-42ae4e8d-270e-4ccd-bf8c-0bbdf3119675.zip"
   architectures = ["x86_64"]
 
   ephemeral_storage {
@@ -153,8 +153,8 @@ resource "aws_lambda_function" "tfer--pre-002D-signup-002D-new" {
 }
 
 resource "aws_lambda_function" "tfer--pre-002D-signup-002D-zip" {
-  s3_bucket = "lambda-foodieflow"
-  s3_key = "pre-signup-f6c5e86c-11e7-46ed-94da-b7f435eb16a1.zip" 
+  s3_bucket     = "lambda-foodieflow"
+  s3_key        = "pre-signup-f6c5e86c-11e7-46ed-94da-b7f435eb16a1.zip"
   architectures = ["x86_64"]
 
   ephemeral_storage {
@@ -185,8 +185,8 @@ resource "aws_lambda_function" "tfer--pre-002D-signup-002D-zip" {
 }
 
 resource "aws_lambda_function" "tfer--verify-002D-auth-002D-challenge" {
-  s3_bucket = "lambda-foodieflow"
-  s3_key = "verify-auth-challenge-f524a303-99f2-49a2-a576-5f3bdc727364.zip"
+  s3_bucket     = "lambda-foodieflow"
+  s3_key        = "verify-auth-challenge-f524a303-99f2-49a2-a576-5f3bdc727364.zip"
   architectures = ["x86_64"]
 
   ephemeral_storage {
