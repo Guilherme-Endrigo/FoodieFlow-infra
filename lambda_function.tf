@@ -1,4 +1,6 @@
 resource "aws_lambda_function" "tfer--create-002D-auth-002D-challenge" {
+  s3_bucket     = "lambda-foodieflow"
+  s3_key        = "create-auth-challenge-9c5f29cd-001c-4fb3-b71a-9ef9037004ee.zip"
   architectures = ["x86_64"]
 
   ephemeral_storage {
